@@ -6,8 +6,8 @@ Ext.define('CartoonPlayer.view.CartoonPictureView', {
 		height : '100%'
 		, store : 'CartoonPictureStore'
 		, emptyText : '<div class="y-mainFontColor">There is no data</div>'
-		// , itemTpl : Ext.create('Ext.XTemplate',
-				// '<div>{text}</div>'
-		// )
+		, itemTpl : Ext.create('Ext.XTemplate',
+				'<img src="{url}" height="{height}px">'
+		)
     }
 });

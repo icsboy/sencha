@@ -7,7 +7,7 @@ Ext.define('CartoonPlayer.store.CartoonPictureStore', {
             type : 'ajax'
             , reader : {
                 type : 'json'
-                // , rootProperty : 'images'
+                , rootProperty : 'images'
             }
         }
     }

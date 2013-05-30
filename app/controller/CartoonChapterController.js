@@ -24,27 +24,12 @@ Ext.define('CartoonPlayer.controller.CartoonChapterController', {
 
     , tabListItem : function(list, index, target, record, e, eOpts){
         var main = this.getMain();
-        // var store = Ext.getStore('CartoonPictureStore');
-        // store.setProxy({
-        //     url: 'http://cartoon.media.daum.net/webtoon/viewer_images.js?webtoon_episode_id=21005'
-        // });
-        // store.load();
-        // console.log(store);
-        Ext.Ajax.request({
-            url : 'http://cartoon.media.daum.net/webtoon/viewer_images.js'
-            , method : 'GET' 
-            , params : { 
-                webtoon_episode_id : 21005
-            }
-
-            , success : function(response) {
-                console.log(response);
-            }
-
-            , failure : function(response) {
-
-            }
-        })
+        var store = Ext.getStore('CartoonPictureStore');
+        store.setProxy({
+            url: './' + record.getData().url + '.json'
+        });
+        store.load();
+        console.log(store);
         main.setActiveItem('cartoonPictureView');
 	}
     
