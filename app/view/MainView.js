@@ -11,6 +11,9 @@ Ext.define('CartoonPlayer.view.MainView', {
         }
         , items: [
             {
+                xtype : 'mainToolbar'
+            }
+            , {
                 xtype : 'cartoonTitleView'
             }
             , {

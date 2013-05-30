@@ -32,6 +32,7 @@ Ext.application({
         , 'CartoonTitleView'
         , 'CartoonChapterView'
         , 'CartoonPictureView'
+        , 'MainToolbar'
     ]
 
     , icon: {
