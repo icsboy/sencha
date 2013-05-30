@@ -14,7 +14,6 @@ Ext.define('CartoonPlayer.view.MainToolbar', {
    	        	, itemId : 'backDocList'
    	        	, ui : 'back'
    	        	, text : '뒤로'
-   	        	, hidden : true
    	        }
    	        , {
    	        	xtype : 'spacer'
